@@ -1,0 +1,139 @@
+body {
+/*Creative commons photo License: CC0 Public Domain / FAQ, Free for commercial use / No attribution required which has been edited with doodles made by Nibia*/
+    background-image: url(../images/walledit.jpg); 
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.test {
+	width: 90px;
+    height: 65px;
+    background: #767676;
+    border: 4px solid #000;
+    margin: 12px;
+    float: left;
+	opacity: 0.5;
+	transition: all 1s;
+}
+
+.test:hover {
+	opacity: 1.0;
+}
+
+.pages{
+    margin-left: 308px;
+    margin-right: auto
+}
+
+.box {
+    width: 90px;
+    height: 65px;
+    background: #767676;
+    border: 4px solid #000;
+    margin: 12px;
+    float: left;
+}
+
+.pollslider_button-left{
+    
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    margin-left: -160px;
+    float: left;
+}
+
+.pollslider_button-right{
+    
+    width: 50px;
+    height: 50px;
+    margin-right: 250px;
+    margin-top: -20px;
+    float: right;
+}
+
+.selected {
+    background: #ff8989;
+    border: 4px solid #ea0000;
+}
+
+.container {
+      width: 840px;
+      height: 560px;
+      position: relative;
+      margin: 0 auto 10px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 800px;
+         -moz-perspective: 800px;
+           -o-perspective: 800px;
+              perspective: 800px;
+    }
+
+    #card {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 2s;
+         -moz-transition: -moz-transform 2s;
+           -o-transition: -o-transform 2s;
+              transition: transform 2s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card.flipped {
+      -webkit-transform: rotateY( 90deg );
+         -moz-transform: rotateY( 90deg );
+           -o-transform: rotateY( 90deg );
+              transform: rotateY( 90deg );
+
+    }
+
+    #card figure {
+	  margin: 0px;
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 140px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card .front {
+      background-image: url("../images/Page2.jpg");
+      opacity: 50%;
+      background-repeat: no-repeat;
+      height: 560px;
+      width: 840px;
+    }
+
+    #card .back {
+      background-image: url("../images/Page2.jpg");
+      height: 560px;
+      width: 840px;
+      -webkit-transform: rotateY( -90deg );
+         -moz-transform: rotateY( -90deg );
+           -o-transform: rotateY( -90deg );
+              transform: rotateY( -90deg );
+    }
+
+    .clearfix {
+	    clear: both;
+    }
+
+.overlay {
+    position: absolute;
+    z-index: 10; 
+
+}
